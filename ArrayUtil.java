@@ -13,8 +13,7 @@ public class ArrayUtil {
 
     // 计算数组中元素的总和
     public static double average(int[] arr) {
-        try {
-            if (arr == null || arr.length == 0) {
+        if (arr == null || arr.length == 0) {
             return 0;
         }
         return (double) sum(arr) / arr.length;
